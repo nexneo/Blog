@@ -1,0 +1,21 @@
+---
+layout: default
+title: "404"
+comments: false
+---
+
+<div class="blog-index">
+  <article>
+    Page you followed doesn't exists.
+  </article>
+  <div class="pagination">
+    <a href="/blog/archives">Blog Archives</a>
+  </div>
+</div>
+<aside class="sidebar">
+  {% if site.blog_index_asides.size %}
+    {% include_array blog_index_asides %}
+  {% else %}
+    {% include_array default_asides %}
+  {% endif %}
+</aside>
